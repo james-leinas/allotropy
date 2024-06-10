@@ -103,7 +103,7 @@ class WellList:
         return iter(self.wells)
 
     @staticmethod
-    def create(contents: MabTechApexContents) -> WellList:
+    def create(contents: MabtechApexContents) -> WellList:
         plate_data = contents.data
         well_list = []
         for _, well_data in plate_data.iterrows():
